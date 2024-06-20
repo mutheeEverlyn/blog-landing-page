@@ -1,78 +1,179 @@
 .features {
-    width: 100%;
-      h2 {
-        color: black;
-        text-align: center;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.features h2 {
+  color: hsl(237, 23%, 32%);
+  text-align: center;
+  font-size: 32px;
+}
+
+.features .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.features .content {
+  width: 50%;
+}
+
+.features .img {
+  margin-left: 30px;
+}
+
+.features .img img {
+  width: 100%;
+  margin-top: -90px;
+}
+
+.features .feature {
+  background-color: white;
+  padding: 20px;
+}
+
+.features .feature h3 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.features .feature p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.features .stateOfArt {
+  background-image: url('../assets/bg-pattern-circles.svg');
+  background: linear-gradient(hsl(236, 9%, 32%), hsl(237, 23%, 32%));
+  background-size: contain;
+  height: 300px;
+  display: flex;
+  border-radius: 0px 50px;
+  margin-bottom: 20px;
+}
+
+.features .stateOfArt .image img {
+  width: 300px;
+}
+
+.features .stateOfArt .stateContent {
+  margin-top: 30px;
+}
+
+.features .stateOfArt .stateContent h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.features .stateOfArt .stateContent p {
+  color: hsl(240, 2%, 79%);
+  font-size: 16px;
+}
+
+.features .laptop {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.features .laptop .img img {
+  width: 400px;
+  margin-left: 0px;
+}
+
+@media (max-width: 1024px) {
+  .features h2 {
+    font-size: 28px;
+    .feature h3 {
+      font-size: 20px;
+    }
+  
+     .feature p {
+      font-size: 14px;
+    }
+   .container{
+    display: flex;
+    img{
+      .img {
+        width: 500px;
+        margin-top: -90px;
       }
-      .container{
-        display: flex;
-        gap: 10px;
-        width: 90%;
-        height: 600px;
-        .content{
-          width: 50%;
-        }
-        .img {
-          img{
-          height: 550px;
-          width: 400px;
-          margin-top: -100px;
-        }
-      }
-      }
-      .feature {
-        // flex: 1 1 45%;
-        background-color: white;
-        padding: 20px;
-      }
-      
-      h3 {
-        margin-top: 20px;
-      }
-      
-       p {
-        margin: 10px 0;
-      }
-      .stateOfArt{
-        background-image: url('../assets/bg-pattern-circles.svg');
-        background-color: hsl(237, 17%, 21%);
-        background-size: contain;
-        height: 300px;
-        display: flex;
-        border-radius: 0px 50px;
-        
-        .image{
-          img{
-            width:300px ;
-          }
-         
-        }
-        .stateContent{
-          margin-top: 30px;
-          h2{
-            color: white;
-          }
-          p{
-            color: hsl(240, 2%, 79%);
-          }
-        }
-      }
-      .laptop{
-        display: flex;
-        margin-top: 20px;
-        width: 80%;
-        .img{
-          img{
-            width: 400px;
-            margin-left: 0px;
-        }
-        }
-      }
-      
     }
     
+   }
+    .content {
+      width: 100%;
+    }
   
-  
-  
+   
+  }
 
-  
+   
+}
+
+@media (max-width: 768px) {
+  .features h2 {
+    font-size: 24px;
+  }
+
+  .features .feature h3 {
+    font-size: 18px;
+  }
+
+  .features .feature p {
+    font-size: 12px;
+  }
+
+  .features .stateOfArt {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features .stateOfArt .image img {
+    width: 100%;
+  }
+
+  .features .stateOfArt .stateContent h2 {
+    font-size: 20px;
+  }
+
+  .features .stateOfArt .stateContent p {
+    font-size: 14px;
+  }
+
+  .features .laptop {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .features .laptop .img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .features h2 {
+    font-size: 20px;
+  }
+
+  .features .feature h3 {
+    font-size: 16px;
+  }
+
+  .features .feature p {
+    font-size: 10px;
+  }
+
+  .features .stateOfArt .stateContent h2 {
+    font-size: 18px;
+  }
+
+  .features .stateOfArt .stateContent p {
+    font-size: 12px;
+  }
+}

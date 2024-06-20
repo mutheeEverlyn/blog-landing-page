@@ -1,41 +1,69 @@
 .footer {
-    background-color: #333;
-    border-radius: 0px 50px 0px 0px;
-    color: white;
-    padding: 40px 0;
-    width: 100vw;
-    .container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    
+  background-color: hsl(237, 23%, 32%);
+  border-radius: 0px 50px 0px 0px;
+  color: white;
+  padding: 40px 0;
+  width: 100vw;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-section {
+  flex: 1 1 20%;
+}
+
+.footer h2, .footer h3 {
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .footer  {
     .footer-section {
-      flex: 1 1 20%;
-    }
-    
-     h2, .footer h3 {
-      color: white;
-    }
-    
-     ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-     li {
-      margin: 10px 0;
-    }
-    
-     a {
-      color: #bbb;
-      text-decoration: none;
-    }
-    
-     a:hover {
-      color: white;
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
+
+   
+}
+
+@media (max-width: 768px) {
+  .footer{
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   
- 
+     .logo {
+      margin-bottom: 20px;
+    }
   
+    .footer-section {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

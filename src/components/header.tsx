@@ -1,11 +1,16 @@
-
+// import React,{ useState} from 'react'
 import './header.scss';
-
+import logo from '../assets/logo.svg'
+// import mobileMenu from './mobileMenu'
 const Header = () => {
+  // const[isMobilemenuOpen,setMobileMenuOpen]=useState(false);
+  // const toggleMobileMenu = () => {
+    // setMobileMenuOpen(!isMobileMenuOpen);
+  // };
   return (
     <header className="header">
       <div className="container">
-        <div className="logo"><img src='./src/assets/logo.svg' alt='logo'></img></div>
+        <div className="logo"><img src={logo} alt='logo'></img></div>
         <nav className="nav">
           <ul>
             <li><a href="#">Product</a><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'></img></li>
@@ -17,6 +22,7 @@ const Header = () => {
           <button className="login">Login</button>
           <button className="sign-up">Sign Up</button>
         </div>
+        
       </div>
       <section className="modern">
       <div className="content">
