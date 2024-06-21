@@ -1,6 +1,7 @@
 // import React,{ useState} from 'react'
 import './header.scss';
 import logo from '../assets/logo.svg'
+import hamburger from '../assets/icon-hamburger.svg'
 // import mobileMenu from './mobileMenu'
 const Header = () => {
   // const[isMobilemenuOpen,setMobileMenuOpen]=useState(false);
@@ -13,16 +14,19 @@ const Header = () => {
         <div className="logo"><img src={logo} alt='logo'></img></div>
         <nav className="nav">
           <ul>
-            <li><a href="#">Product</a><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'></img></li>
-            <li><a href="#">Company</a><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'></img></li>
-            <li><a href="#">Connect</a><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'></img></li>
+            <li><a href="#">Product</a><button><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'/></button></li>
+            <li><a href="#">Company</a><button><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'/></button></li>
+            <li><a href="#">Connect</a><button><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'/></button></li>
           </ul>
         </nav>
         <div className="buttons">
           <button className="login">Login</button>
           <button className="sign-up">Sign Up</button>
         </div>
-        
+        <div className='hamburger'>
+          <button> <img src={hamburger} alt='icon-arrow'/></button>
+       
+        </div>
       </div>
       <section className="modern">
       <div className="content">

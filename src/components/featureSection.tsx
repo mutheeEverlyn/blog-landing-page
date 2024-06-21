@@ -6,19 +6,19 @@ const FeatureSection = () => {
     <section className="features">
           <h2>Designed for the future</h2>
           <div className="container">
+          <div className='img'>
+          <img src='./src/assets/illustration-editor-desktop.svg' alt='feature1-image'/>
+        </div>
           <div className='content'>
           <h3>Introducing an extensible editor</h3>
           <p>
             Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown.
           </p>
           <h3>Robust content management</h3>
-          <p>
+          <p className='item'>
             Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
           </p>
           </div>
-        <div className='img'>
-          <img src='./src/assets/illustration-editor-desktop.svg' alt='feature1-image'/>
-        </div>
         </div>
         <div className="stateOfArt">
           <div className='image'>
