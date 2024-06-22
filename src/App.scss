@@ -1,14 +1,198 @@
+// body {
+//   font-family: 'Arial', sans-serif;
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   width: 100%;
+// }
+
+// .container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 0 20px;
+// }
+
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   width: 100%;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.features {
+  h2 {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .content {
+      order: 1;
+      width: 50%;
+    }
+
+    .img {
+      float: right;
+      width: 500px;
+      order: 2;
+      margin-right: -100px;
+
+      img {
+        order: 2;
+        width: 500px;
+      }
+    }
+  }
+
+  .stateOfArt {
+    background-image: url('../assets/bg-pattern-circles.svg');
+    background: linear-gradient(hsl(236, 9%, 32%), hsl(237, 23%, 32%));
+    background-size: contain;
+    display: flex;
+    border-radius: 0px 100px;
+    margin-bottom: 20px;
+
+    .image {
+      img {
+        width: 300px;
+        margin-bottom: -80px;
+      }
+    }
+
+    .stateContent {
+      margin: 30px;
+
+      h2 {
+        color: white;
+        font-size: 24px;
+      }
+
+      p {
+        color: hsl(240, 2%, 79%);
+        font-size: 16px;
+      }
+    }
+  }
+
+  .laptop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+
+    .img {
+      width: 200px;
+      float: left;
+      margin-left: -250px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      float: right;
+    }
+  }
 }
 
+@media (max-width: 768px) {
+  body{width: 80%;
+  .features {
+    // h2 {
+    //   font-size: 24px;
+    // }
+     .stateOfArt {
+      // height: auto;
+      flex-direction: column;
+      align-items: center;
+      .image img {
+        width: 100%;
+      }
+    }
+  
+     .laptop {
+      flex-direction: column;
+      align-items: center;
+      // width: 100%;
+    .img {img {
+        width: 100%;
+      }
+    }
+  }
+  }
+  .features {
+    // width: 100%;
+    padding: 60px 0;
+    h2 {
+      color: hsl(237, 23%, 32%);
+      text-align: center;
+      font-size: 32px;
+    }
+     .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      .content {
+        width: 100%;
+       .item{
+        margin-bottom: 250px;
+        }
+      }
+       .img {
+        margin-bottom: 150px;
+        
+        img {
+          width: 100%;
+          // margin-top: -90px;
+        }
+      }
+      
+    }
+    
+     .stateOfArt {
+      background-image: url('../assets/bg-pattern-circles.svg');
+      background: linear-gradient(hsl(236, 9%, 32%), hsl(237, 23%, 32%));
+      background-size: contain;
+      // height: 250px;
+      display: flex;
+      border-radius: 0px 100px;
+      margin-bottom: 20px;
+      
+      .image{ img {
+        // width: 300px;
+        margin-top: -200px;
+        text-align: center;
+      }
+    }
+       .stateContent {
+        margin: 30px;
+        h2 {
+          color: white;
+          font-size: 24px;
+        }
+          p {
+          color: hsl(240, 2%, 79%);
+          font-size: 16px;
+        }
+      }
+      
+    }
+    
+     .laptop {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      width: 80%;
+    }
+    
+     .laptop {
+      .img{
+        img {
+      width: 400px;
+    }
+  }
+}
+  }
+}
+}

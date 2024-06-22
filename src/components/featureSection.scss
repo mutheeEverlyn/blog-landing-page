@@ -1,29 +1,26 @@
 body{
   width: 100%;
   .features{ 
-    padding: 60px 0;
     h2 {
     text-align: center;
    .container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     .content {
       // float: left;
+      order: 1;
       width: 50%;
     }
     .img{
-      // float: right;
-      // width: 500px;
-      // margin-right: -500px;
-      width: 50%;
-      text-align: center;
+      float: right;
+      width: 500px;
+      order: 2;
+      margin-right: -500px;
       img {
         // width: 100%;
-        // width: 300px;
-        width: 100%; 
-        // max-width: 100%;
-        height: auto;
+        order: 2;
+        width: 300px;
+     
       }
     }
     
@@ -39,19 +36,15 @@ body{
     display: flex;
     border-radius: 0px 100px;
     margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
+    
     .image{ img {
-      // width: 300px;
-      // margin-bottom: -80px;
-      width: 100%; 
-      max-width: 100%;
-      height: auto;
+      width: 300px;
+      margin-bottom: -80px;
+    
     }
   }
      .stateContent {
       margin: 30px;
-      text-align: center;
       h2 {
         color: white;
         font-size: 24px;
@@ -67,20 +60,14 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    align-items: center;
-    // width: 100%;
+    width: 100%;
     .img{
-      img{
-      // width: 200px;
-      // float: left;
-      // margin-left: -250px;
-      width: 100%;
-      max-width: 100%;
-      height: auto;
+      width: 200px;
+      float: left;
+      margin-left: -250px;
     }
-  }
     .content{
-      // float: right;
+      float: right;
     }
   }
 }
