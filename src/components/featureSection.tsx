@@ -1,13 +1,15 @@
 
 import './featureSection.scss';
-
+import illustrationEditorDesktop from '../assets/illustration-editor-desktop.svg'
+import illustrationPhones from '../assets/illustration-phones.svg'
+import illustrationlaptopDesktop from '../assets/illustration-laptop-desktop.svg'
 const FeatureSection = () => {
   return (
     <section className="features">
           <h2>Designed for the future</h2>
           <div className="container">
           <div className='img'>
-          <img src='./src/assets/illustration-editor-desktop.svg' alt='feature1-image'/>
+          <img src={illustrationEditorDesktop} alt='feature1-image'/>
         </div>
           <div className='content'>
           <h3>Introducing an extensible editor</h3>
@@ -22,7 +24,7 @@ const FeatureSection = () => {
         </div>
         <div className="stateOfArt">
           <div className='image'>
-            <img src='./src/assets/illustration-phones.svg'/>
+            <img src={illustrationPhones}/>
           </div>
           <div className='stateContent'>
           <h2>State of the Art Infrastructure</h2>
@@ -34,7 +36,7 @@ const FeatureSection = () => {
         </div>
         <div className="laptop">
           <div className='img'>
-            <img src='./src/assets/illustration-laptop-desktop.svg' alt='laptop'/>
+            <img src={illustrationlaptopDesktop} alt='laptop'/>
           </div>
           <div className='content'>
           <h2>Free, open, simple</h2>
