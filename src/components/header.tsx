@@ -1,12 +1,13 @@
 // import React,{ useState} from 'react'
 import './header.scss';
 import logo from '../assets/logo.svg'
+import arrowIcon from '../assets/icon-arrow-light.svg'
 import hamburger from '../assets/icon-hamburger.svg'
-// import mobileMenu from './mobileMenu'
+// import DropdownMenu from './mobileMenu'
 const Header = () => {
   // const[isMobilemenuOpen,setMobileMenuOpen]=useState(false);
   // const toggleMobileMenu = () => {
-    // setMobileMenuOpen(!isMobileMenuOpen);
+  //   setMobileMenuOpen(!isMobilemenuOpen);
   // };
   return (
     <header className="header">
@@ -14,9 +15,9 @@ const Header = () => {
         <div className="logo"><img src={logo} alt='logo'></img></div>
         <nav className="nav">
           <ul>
-            <li><a href="#">Product</a><button><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'/></button></li>
-            <li><a href="#">Company</a><button><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'/></button></li>
-            <li><a href="#">Connect</a><button><img src='./src/assets/icon-arrow-light.svg' alt='icon-arrow'/></button></li>
+            <li><a href="#">Product</a><button><img src={arrowIcon} alt='icon-arrow'/></button></li>
+            <li><a href="#">Company</a><button><img src={arrowIcon}  alt='icon-arrow'/></button></li>
+            <li><a href="#">Connect</a><button><img src={arrowIcon}  alt='icon-arrow'/></button></li>
           </ul>
         </nav>
         <div className="buttons">
@@ -24,7 +25,7 @@ const Header = () => {
           <button className="sign-up">Sign Up</button>
         </div>
         <div className='hamburger'>
-          <button> <img src={hamburger} alt='icon-arrow'/></button>
+          <button > <img src={hamburger} alt='icon-arrow'/></button>
        
         </div>
       </div>

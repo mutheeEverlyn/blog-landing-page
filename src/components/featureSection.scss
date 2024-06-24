@@ -3,28 +3,26 @@ body{
   .features{ 
     h2 {
     text-align: center;
+    }
    .container{
     display: flex;
     justify-content: space-between;
     .content {
-      // float: left;
       order: 1;
       width: 50%;
     }
     .img{
-      float: right;
-      width: 500px;
+      // float: right;
+      width: 300px;
       order: 2;
-      margin-right: -500px;
+      margin-right: 100px;
       img {
-        // width: 100%;
-        order: 2;
-        width: 300px;
+        // order: 2;
+        // width: 300px;
+        width: 100%;
      
       }
     }
-    
-    
    }
   
   }
@@ -32,7 +30,6 @@ body{
     background-image: url('../assets/bg-pattern-circles.svg');
     background: linear-gradient(hsl(236, 9%, 32%), hsl(237, 23%, 32%));
     background-size: contain;
-    // height: 250px;
     display: flex;
     border-radius: 0px 100px;
     margin-bottom: 20px;
@@ -62,66 +59,50 @@ body{
     padding: 20px;
     width: 100%;
     .img{
-      width: 200px;
-      float: left;
-      margin-left: -250px;
+      width: 300px;
+      img{
+      width: 100%;
+      }
     }
     .content{
-      float: right;
+      width: 50%;
+      margin-right: 20px;
     }
   }
 }
-}
+
 
 
 @media (max-width: 768px) {
-  body{width: 80%;
+  body{
+    width: 100%;
   .features {
-    // h2 {
-    //   font-size: 24px;
-    // }
-     .stateOfArt {
-      // height: auto;
-      flex-direction: column;
-      align-items: center;
-      .image img {
-        width: 100%;
-      }
-    }
-  
-     .laptop {
-      flex-direction: column;
-      align-items: center;
-      // width: 100%;
-    .img {img {
-        width: 100%;
-      }
-    }
-  }
-  }
-  .features {
-    // width: 100%;
-    padding: 60px 0;
+    width: 100%;
     h2 {
       color: hsl(237, 23%, 32%);
       text-align: center;
       font-size: 32px;
     }
      .container {
+      width: 80%;
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
       .content {
-        // width: 100%;
+        // width: 300px;
+        width: 100%;
+        order: 2;
+        margin-top: -150px;
        .item{
         margin-bottom: 250px;
         }
       }
        .img {
-        // margin-left: 30px;
+        margin-left: 60px;
+        // width: 300px;
+        width: 100%;
         img {
           width: 100%;
+          // width: 300px;
           // margin-top: -90px;
         }
       }
@@ -132,13 +113,13 @@ body{
       background-image: url('../assets/bg-pattern-circles.svg');
       background: linear-gradient(hsl(236, 9%, 32%), hsl(237, 23%, 32%));
       background-size: contain;
-      // height: 250px;
       display: flex;
       border-radius: 0px 100px;
       margin-bottom: 20px;
       
       .image{ img {
         // width: 300px;
+        width: 100%;
         margin-top: -200px;
         text-align: center;
       }
@@ -162,15 +143,19 @@ body{
       flex-wrap: wrap;
       margin-top: 20px;
       width: 80%;
-    }
-    
-     .laptop {
+      .content{
+        width: 100%;
+      }
       .img{
+        width: 100%;
         img {
-      width: 400px;
-    }
-  }
-}
+          // margin-left: 30px;
+          margin-left: 0px;
+          width: 100%;
+          // width: 400px;
+            }
+          }
+      }
   }
 }
 }

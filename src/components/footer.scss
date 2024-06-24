@@ -42,6 +42,11 @@
     .footer-section {
       // width: 100%;
       margin-bottom: 20px;
+      ul{
+        li:hover{
+          text-decoration: underline;
+        }
+      }
     }
   }
 

@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
   }
   
    .logo {
@@ -108,7 +109,6 @@
   
   
    .content {
-    // max-width: 800px;
     margin: 0 auto;
   }
   
@@ -150,12 +150,7 @@
     }
   }
     .container{
-      h1 {
-        // font-size: 36px;
-      }
-     p {
-        // font-size: 18px;
-      }
+      margin: 0px;
       .buttons {
         .login,.sign-up{
        display: none;
