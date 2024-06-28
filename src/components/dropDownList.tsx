@@ -1,14 +1,29 @@
-
+// import  { FC } from "react";
 // import iconLight from "../assets/images/icon-arrow-light.svg";
 // import iconDark from "../assets/images/icon-arrow-dark.svg";
 
+// import "./css/dropdown.scss";
 
-// import "./mobileMenu.scss";
+// interface Category {
+//   name: string;
+//   links: string[];
+// }
 
-// const DropdownMenu = ({ category, isActive, toggleDropdown, isOpen }) => {
+// interface DropdownMenuProps {
+//   category: Category;
+//   isActive: boolean;
+//   toggleDropdown: (name: string) => void;
+//   isOpen: boolean;
+// }
+
+// const DropdownMenu: FC<DropdownMenuProps> = ({
+//   category,
+//   isActive,
+//   toggleDropdown,
+//   isOpen,
+// }) => {
 //   return (
 //     <li className="nav-link active">
-      
 //       <div onClick={() => toggleDropdown(category.name)}>
 //         <a className="active">{category.name}</a>
 //         <img
@@ -31,18 +46,3 @@
 // };
 
 // export default DropdownMenu;
-
-const DropDownMenu = () => {
-  return (
-    <div>
-        <ul>
-           <li><a href="#">About</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-    </div>
-  )
-}
-
-export default DropDownMenu
