@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './header.scss';
 import logo from '../assets/logo.svg';
 import arrowIcon from '../assets/icon-arrow-light.svg';
 import hamburger from '../assets/icon-hamburger.svg';
-import closeIcon from '../assets/icon-close.svg'; // Add an icon to close the menu
+import closeIcon from '../assets/icon-close.svg';
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,8 +35,8 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo"><img src={logo} alt='logo' /></div>
-        <nav className="nav">
-          <ul className={isMobileMenuOpen ? 'open' : ''}>
+        <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
+          <ul>
             <li>
               <a href="#" onClick={() => toggleDropdown('company')}>
                 Company <img src={arrowIcon} alt='icon-arrow' />

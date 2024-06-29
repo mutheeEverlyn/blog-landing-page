@@ -68,7 +68,7 @@
       li {
         a {
           display: block;
-          padding: 10px;
+          // padding: 10px;
           color: #000;
           &:hover {
             background: #f0f0f0;
@@ -256,6 +256,9 @@
     ul.open {
       flex-direction: column;
     }
+    // .dropdown{
+    //   float: right;
+    // }
     
   }
     .container{
