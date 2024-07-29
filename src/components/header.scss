@@ -69,7 +69,8 @@
             color: #000;
 
             &:hover {
-              background: #f0f0f0;
+              color:hsl(240, 90%, 4%) ;
+              font-weight: bold;
             }
           }
         }
@@ -268,8 +269,7 @@
       margin: 0;
 
       .buttons {
-        .login,
-        .sign-up {
+        .login,.sign-up {
           display: none;
         }
       }
