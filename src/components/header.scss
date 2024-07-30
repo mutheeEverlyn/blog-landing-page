@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   color: white;
   padding: 20px 0;
-  border-radius: 0px 0px 0px 100px;
+  border-radius: 0 0 0 100px;
   width: 100%;
 
   .container {
@@ -32,13 +32,13 @@
 
     li {
       position: relative;
-
+     margin-top: 10px;
       a {
         text-decoration: none;
         color: white;
         display: flex;
         align-items: center;
-        img{
+        img {
           margin-left: 5px;
         }
       }
@@ -69,37 +69,38 @@
             color: #000;
 
             &:hover {
-              color:hsl(240, 90%, 4%) ;
+              color: hsl(240, 90%, 4%);
               font-weight: bold;
             }
           }
         }
       }
     }
-  }
-
-  .buttons {
-    .login,
-    .sign-up {
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .sign-up {
-      background-color: white;
-      color: #f25f3a;
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin-left: 10px;
-
-      &:hover {
-        background: lightblue;
+    .buttons {
+      .login,
+      .sign-up {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+      }
+  
+      .sign-up {
+        background-color: white;
+        color: #f25f3a;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-left: 10px;
+  
+        &:hover {
+          background: lightblue;
+        }
       }
     }
   }
+
+ 
 
   .hamburger {
     display: none;
@@ -161,7 +162,7 @@
 
   .modern {
     color: white;
-    padding: 10px 0px 60px 0px;
+    padding: 10px 0 60px;
     text-align: center;
 
     h1 {
@@ -222,13 +223,14 @@
     padding: 0;
     width: 100%;
     margin: 0;
-
+    
     .desktop-menu {
       display: none;
     }
 
     .hamburger {
       display: block;
+      margin-left: auto;
       button {
         background-color: transparent;
         border: none;
@@ -239,7 +241,7 @@
       ul {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 60%;
         position: absolute;
         top: 60px;
         right: 0;
@@ -247,20 +249,37 @@
         padding: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1000;
+        border-radius: 10px;
       }
-      ul.open {
-        display: flex;
+      &.open {
+        ul {
+          display: flex;
+          
+        }
       }
 
       li {
         width: 100%;
-
+        a{
+        color: black;
+        &:hover{
+          color: grey;
+        }
+        img{
+          background-color: #f25f3a;
+        }
+        }
         .dropdown {
           position: relative;
           top: 0;
           left: 0;
           background: #fff;
           box-shadow: none;
+          li{
+            a{
+              color: grey;
+            }
+          }
         }
       }
     }
@@ -269,8 +288,17 @@
       margin: 0;
 
       .buttons {
-        .login,.sign-up {
-          display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .login{
+          color: #000;
+        }
+        .sign-up {
+          background: #f25f3a;
+          color:white;
+          width: 100px;
+          margin: 10px 0px;
         }
       }
     }
