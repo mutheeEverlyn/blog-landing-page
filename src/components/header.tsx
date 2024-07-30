@@ -35,8 +35,14 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo"><img src={logo} alt='logo' /></div>
+        <div className="hamburger" onClick={toggleMobileMenu}>
+          <button>
+            <img src={isMobileMenuOpen ? closeIcon : hamburger} alt='menu-icon' />
+          </button>
+        </div>
         <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul>
+            
             <li>
               <a href="#" onClick={() => toggleDropdown('company')}>
                 Company <img src={arrowIcon} alt='icon-arrow' />
@@ -76,17 +82,14 @@ const Header = () => {
                 </ul>
               )}
             </li>
-          </ul>
-        </nav>
-        <div className="buttons">
+            
+              <div  className="buttons">
           <button className="login">Login</button>
           <button className="sign-up">Sign Up</button>
-        </div>
-        <div className="hamburger" onClick={toggleMobileMenu}>
-          <button>
-            <img src={isMobileMenuOpen ? closeIcon : hamburger} alt='menu-icon' />
-          </button>
-        </div>
+          </div>
+        
+          </ul>
+        </nav>
       </div>
       <section className="modern">
         <div className="content">
